@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Previsão do Tempo</title>
+  </head>
+  <body>
+    <div class="bigBox">
+      <input class="inputCity" placeholder="Digite o nome da cidade" />
+      <button class="buttonSearch" onclick="clickButton()">
+        <img
+          class="imgSearch"
+          src="https://www.svgrepo.com/show/488200/find.svg"
+          alt="Buscar"
+        />
+      </button>
+
+      <div class="mediumBox">
+        <h2 class="city">Tempo em </h2>
+        <p class="tempMax">°C</p>
+        <p class="tempMin">°C</p>
+      </div>
+
+      <div class="smallBox">
+        <img
+        class="imgPrevisao" 
+        alt="iconeTempo" 
+        src="https://openweathermap.org/img/wn/04n.png" 
+        />
+        <p class="textPrevisao"></p>
+      </div>
+
+      <p class="umidade">Umidade: %</p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
